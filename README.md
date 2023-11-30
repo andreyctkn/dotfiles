@@ -1,6 +1,6 @@
 # Dotfiles
 
-> This fork of Dotfiles contains some simplifications for setup and:
+> 🚧 This fork of Dotfiles contains some simplifications for setup and: 🚧
 > - No VIM and VCCode config
 > - Automatic brew install
 > - Openjdk and Node install

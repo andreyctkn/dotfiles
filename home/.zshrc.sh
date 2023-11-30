@@ -1,5 +1,10 @@
 #!/usr/bin/env zsh
 
+# ==================================================================
+# = JVM =
+# ==================================================================
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
 curr="$dev/dotfiles"
 
 # Load main files.
@@ -12,7 +17,6 @@ source "$curr/terminal/zsh-autosuggestions/zsh-autosuggestions.zsh"
 # echo "Load end\t" $(gdate "+%s-%N")
 
 autoload -U colors && colors
-
 # Load and execute the prompt theming system.
 fpath=("$curr/terminal" $fpath)
 autoload -Uz promptinit && promptinit
