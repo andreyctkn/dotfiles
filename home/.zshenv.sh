@@ -93,4 +93,6 @@ unset gitssh
 export EDITOR=$commands[code]
 export VISUAL=$commands[code]
 
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
 export SSH_AUTH_SOCK="${HOME}/.gnupg/S.gpg-agent.ssh"
