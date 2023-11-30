@@ -1,9 +1,7 @@
 #!/bin/sh
 
-dev="$HOME/Developer"
-dotfiles="$dev/personal/dotfiles"
+dotfiles="$DEV_DIR/dotfiles"
 
-echo ""
 if [ -d "$dotfiles" ]; then
   echo "Symlinking dotfiles from $dotfiles"
 else
@@ -24,15 +22,3 @@ for location in $(find home -name '.*'); do
   file="${file%.sh}"
   link "$dotfiles/$location" "$HOME/$file"
 done
-
-link $dotfiles/vim $HOME/.vim
-unm=$(uname)
-if [ $unm = 'Darwin' ]; then
-  vsdir="$HOME/Library/Application Support/Code/User"
-else
-  vsdir="$HOME/.vscode"
-fi
-
-if [ -d "$vsdir" ]; then
-  link "$dotfiles/vscode/settings.json" "$vsdir/settings.json"
-fi

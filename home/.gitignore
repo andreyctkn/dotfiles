@@ -24,8 +24,6 @@
 /tmp
 
 # Project stuff
-yarn.lock
 .pnp.cjs
 .yarn
-package-lock.json
 /.nyc_output/
