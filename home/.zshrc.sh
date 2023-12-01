@@ -5,6 +5,9 @@
 # ==================================================================
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
+# Added by OrbStack: command-line tools and integration
+source ~/.orbstack/shell/init.zsh 2>/dev/null || :
+
 curr="$dev/dotfiles"
 
 # Load main files.
@@ -30,6 +33,8 @@ export GPG_TTY=$(tty) # For git commit signing
 # ==================================================================
 # = Aliases =
 # ==================================================================
+alias dev="cd $dev"
+
 alias -g CNT="| wc -l"
 alias -g COUNT="| wc -l"
 alias -g SUM="| wc -l"
